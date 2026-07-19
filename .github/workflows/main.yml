@@ -1,0 +1,15 @@
+# 1. Deploy API
+cd apps/api
+railway up
+
+# 2. Get API URL
+railway domain
+
+# 3. Deploy Web
+cd apps/web
+vercel deploy --prod
+
+# 4. Add environment variables
+# In Vercel: NEXT_PUBLIC_API_URL = https://api.your-railway-domain.com
+
+# 5. Done! 🎉
